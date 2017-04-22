@@ -1,0 +1,17 @@
+.well {
+  background: #2c3e50;
+  color: #ddd;
+}
+
+.hoverwell:hover {
+  background-color: #485563;
+  cursor: pointer;
+}
+
+.pad-left {
+  margin-left: 10px;
+}
+
+.thumbnail {
+  min-height: 210px;
+}
