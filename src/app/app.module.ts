@@ -4,17 +4,29 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { EventsListComponent } from './components/events/events-list/events-list.component';
+import { EventThumbnailComponent } from './components/events/event-thumbnail/event-thumbnail.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+
+import { EventService } from './services/event.service';
+import { ToastrService } from './services/toastr.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EventsListComponent,
+    EventThumbnailComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    EventService,
+    ToastrService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
